@@ -2,7 +2,7 @@
 .global _start
 
 .section .rodata
-   msg: .ascii "Hello World!\n"
+   msg: .ascii "Hello, World!\n"
    MSG_SIZE = . - msg
 
 .section .text
@@ -15,5 +15,5 @@ _start:
   syscall
 
   movq $60, %rax
-  mov %rdi, %rdi
+  mov $0, %rdi
   syscall

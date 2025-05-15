@@ -2,6 +2,6 @@
 _start:
     mov $42, %rax
 
-    movq $60, %rax
-    mov %rdi, %rdi
+    mov $60, %rax
+    mov $0, %rdi
     syscall
