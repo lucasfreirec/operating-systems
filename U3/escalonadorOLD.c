@@ -16,7 +16,7 @@ static int contador;
 void criar_tarefa(RotinaTarefa rotina)
 {
     if (contador >= TAMANHO_FILA) {
-        printf("Error: Maximum number of tasks reached.\n");
+        printf("Numero maximo de tarefas atingido.\n");
         return;
     }
 
@@ -50,7 +50,6 @@ void wrapper_tarefa() {
     // chama a funcao q sera executada
     tarefa_atual->rotina();
 
-    // After the routine finishes, perform cleanup
     printf("A tarefa %d foi finalizada.\n", tarefa_atual->id);
     tarefa_atual->estado = FINALIZADA;
 
