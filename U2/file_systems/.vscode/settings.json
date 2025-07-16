@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "unistd.h": "c",
+        "stdlib.h": "c",
+        "stdio.h": "c",
+        "fcntl.h": "c",
+        "mman.h": "c",
+        "stat.h": "c",
+        "compare": "c"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "struct___jmp_buf_tag.h": "c",
+        "setjmp.h": "c",
+        "__sigset_t.h": "c",
+        "mman.h": "c",
+        "escalonador.h": "c",
+        "sigset_t.h": "c",
+        "stdio.h": "c",
+        "ucontext.h": "c",
+        "string.h": "c",
+        "stdlib.h": "c"
+    }
+}
