@@ -1,0 +1,8 @@
+total 56
+-rwxrwxr-x 1 lucas_freire_705 lucas_freire_705 16216 Apr 10 13:02 exemplo_ls
+-rw-r--r-- 1 lucas_freire_705 lucas_freire_705   471 Apr 10 13:01 exemplo_ls.c
+-rwxrwxr-x 1 lucas_freire_705 lucas_freire_705 16096 Apr 10 12:52 exemplo_saida
+-rw-r--r-- 1 lucas_freire_705 lucas_freire_705   229 Apr 10 12:59 exemplo_saida.c
+-rwxrwxr-x 1 lucas_freire_705 lucas_freire_705 16088 Apr 10 12:29 lsexec
+-rw------- 1 lucas_freire_705 lucas_freire_705     0 Apr 10 13:02 saidaLS.txt
+-rw------- 1 lucas_freire_705 lucas_freire_705     0 Apr 10 12:53 saida.txt
