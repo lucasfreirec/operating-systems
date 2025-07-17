@@ -2,8 +2,8 @@
 #define ESCALONADOR_H
 
 #include <ucontext.h>
-
 #define TAMANHO_FILA 10
+#define TAMANHO_PILHA 65546 // 64 KB
 
 typedef void (*RotinaTarefa)(void);
 typedef enum { PRONTA, EXECUTANDO, FINALIZADA } EstadoTarefa;

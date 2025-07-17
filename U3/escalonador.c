@@ -3,8 +3,6 @@
 #include <string.h>
 #include <stdio.h>
 
-#define TAMANHO_PILHA 65546 // 64 KB
-
 static Escalonador* escalonador_ativo = NULL;
 
 void wrapper_tarefa() {
@@ -14,8 +12,7 @@ void wrapper_tarefa() {
     printf("A tarefa %d foi finalizada.\n", escalonador_ativo->tarefa_atual->id);
     escalonador_ativo->tarefa_atual->estado = FINALIZADA;
 
-    // volta para o escalonador
-    setcontext(&escalonador_ativo->contexto);
+    return;
 }
 
 void criar_tarefa(RotinaTarefa rotina)
@@ -39,6 +36,7 @@ void criar_tarefa(RotinaTarefa rotina)
     
     nova_tarefa->contexto.uc_stack.ss_sp = pilha;
     nova_tarefa->contexto.uc_stack.ss_size = TAMANHO_PILHA;
+    nova_tarefa->contexto.uc_link = &escalonador_ativo->contexto;
 
     makecontext(&nova_tarefa->contexto, (void (*)(void))wrapper_tarefa, 0);
 
