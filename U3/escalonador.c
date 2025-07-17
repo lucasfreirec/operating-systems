@@ -91,6 +91,7 @@ void escalonador() {
             break;
         }
     }
+    escalonador_ativo->contador = 0;
 }
 
 void yield() {
