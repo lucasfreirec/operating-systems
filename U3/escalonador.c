@@ -92,6 +92,7 @@ void escalonador() {
         }
     }
     escalonador_ativo->contador = 0;
+    escalonador_ativo->tarefa_atual = NULL;
 }
 
 void yield() {
